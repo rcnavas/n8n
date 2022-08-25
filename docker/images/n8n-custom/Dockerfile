@@ -38,6 +38,7 @@ WORKDIR /data
 
 # Install all needed dependencies
 RUN npm_config_user=root npm install -g full-icu
+RUN npm_config_user=root npm install -g sqlite3
 
 # Install fonts
 RUN apk --no-cache add --virtual fonts msttcorefonts-installer fontconfig && \
